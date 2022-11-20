@@ -1,0 +1,24 @@
+<div class="container mt-5 " style="width: 400px ; ">
+  <div class="card text-center" style="padding: 20px;background:blueviolet;">
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+      <div class="form-group ">
+          <div class="mb-3">
+            <input type="text" name="email" id="email" class="form-control" placeholder="email" ngModel>
+          </div>
+          <div class="mb-3">
+            <input type="password" name="password" id="password" class="form-control" ngModel placeholder="password" ngModel>
+          </div >
+          <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="customControlInline">
+            <label class="custom-control-label" for="customControlInline">Remember me</label>
+          </div>
+          <div class="d-flex justify-content-center mt-3 login_container">
+            <button type="submit" name="button" class="btn btn-success ">Login</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+</div>
+
